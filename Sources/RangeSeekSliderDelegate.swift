@@ -26,7 +26,7 @@ public protocol RangeSeekSliderDelegate: class {
     /// Called when the user has finished interacting with the RangeSeekSlider
     ///
     /// - Parameter slider: RangeSeekSlider
-    func didEndTouches(in slider: RangeSeekSlider)
+    func didEndTouches(in slider: RangeSeekSlider, isLeftHandle:Bool)
 
     /// Called when the RangeSeekSlider values are changed. A return `String?` Value is displayed on the `minLabel`.
     ///

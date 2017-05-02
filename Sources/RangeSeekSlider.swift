@@ -349,10 +349,11 @@ import UIKit
 
     open override func endTracking(_ touch: UITouch?, with event: UIEvent?) {
         let handle: CALayer = (handleTracking == .left) ? leftHandle : rightHandle
+        let isLeftHandle = handleTracking == .left
         animate(handle: handle, selected: false)
         handleTracking = .none
 
-        delegate?.didEndTouches(in: self)
+        delegate?.didEndTouches(in: self, isLeftHandle: isLeftHandle)
     }
 
 
