@@ -22,19 +22,10 @@
 		CEF273EE1E702421003AA995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF273E21E7023ED003AA995 /* AppDelegate.swift */; };
 		CEF273EF1E702424003AA995 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF273E61E7023F7003AA995 /* ViewController.swift */; };
 		OBJ_21 /* RangeSeekSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* RangeSeekSlider.swift */; };
-		OBJ_28 /* RangeSeekSliderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* RangeSeekSliderTests.swift */; };
-		OBJ_30 /* RangeSeekSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* RangeSeekSlider.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		CE3D49B11E7121990071E992 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_16;
-			remoteInfo = RangeSeekSlider;
-		};
-		CEFF01C41E70185200C1C4F5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -73,7 +64,6 @@
 		CEF273EB1E702405003AA995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Demo/RangeSeekSliderDemo/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		OBJ_12 /* RangeSeekSliderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSeekSliderTests.swift; sourceTree = "<group>"; };
 		OBJ_14 /* RangeSeekSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RangeSeekSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_15 /* RangeSeekSliderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = RangeSeekSliderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_9 /* RangeSeekSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSeekSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,14 +82,6 @@
 			files = (
 				CED789241E75A57B00900B25 /* CoreGraphics.framework in Frameworks */,
 				CED789261E75A58100900B25 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_29 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_30 /* RangeSeekSlider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_14 /* RangeSeekSlider.framework */,
-				OBJ_15 /* RangeSeekSliderTests.xctest */,
 				CE9937551E70236800EA982A /* RangeSeekSliderDemo.app */,
 			);
 			name = Products;
@@ -247,23 +228,6 @@
 			productReference = OBJ_14 /* RangeSeekSlider.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_23 /* RangeSeekSliderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_24 /* Build configuration list for PBXNativeTarget "RangeSeekSliderTests" */;
-			buildPhases = (
-				OBJ_27 /* Sources */,
-				OBJ_29 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_31 /* PBXTargetDependency */,
-			);
-			name = RangeSeekSliderTests;
-			productName = RangeSeekSliderTests;
-			productReference = OBJ_15 /* RangeSeekSliderTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -275,14 +239,11 @@
 				TargetAttributes = {
 					CE9937541E70236800EA982A = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = S3LY459S86;
+						DevelopmentTeam = D2L7RZT2AW;
 						ProvisioningStyle = Automatic;
 					};
 					OBJ_16 = {
-						ProvisioningStyle = Automatic;
-					};
-					OBJ_23 = {
-						DevelopmentTeam = S3LY459S86;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -301,7 +262,6 @@
 			projectRoot = "";
 			targets = (
 				OBJ_16 /* RangeSeekSlider */,
-				OBJ_23 /* RangeSeekSliderTests */,
 				CE9937541E70236800EA982A /* RangeSeekSliderDemo */,
 			);
 		};
@@ -341,14 +301,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_27 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_28 /* RangeSeekSliderTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -356,11 +308,6 @@
 			isa = PBXTargetDependency;
 			target = OBJ_16 /* RangeSeekSlider */;
 			targetProxy = CE3D49B11E7121990071E992 /* PBXContainerItemProxy */;
-		};
-		OBJ_31 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = OBJ_16 /* RangeSeekSlider */;
-			targetProxy = CEFF01C41E70185200C1C4F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -409,7 +356,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = S3LY459S86;
+				DEVELOPMENT_TEAM = D2L7RZT2AW;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -462,7 +409,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = S3LY459S86;
+				DEVELOPMENT_TEAM = D2L7RZT2AW;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -504,6 +451,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = RangeSeekSlider;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = RangeSeekSlider;
 			};
 			name = Debug;
@@ -527,45 +476,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = RangeSeekSlider;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = RangeSeekSlider;
-			};
-			name = Release;
-		};
-		OBJ_25 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = S3LY459S86;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = RangeSeekSlider.xcodeproj/RangeSeekSliderTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				TARGET_NAME = RangeSeekSliderTests;
-			};
-			name = Debug;
-		};
-		OBJ_26 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = S3LY459S86;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = RangeSeekSlider.xcodeproj/RangeSeekSliderTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				TARGET_NAME = RangeSeekSliderTests;
 			};
 			name = Release;
 		};
@@ -587,7 +500,7 @@
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				USE_HEADERMAP = NO;
 			};
 			name = Debug;
@@ -608,7 +521,7 @@
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
@@ -639,15 +552,6 @@
 			buildConfigurations = (
 				OBJ_3 /* Debug */,
 				OBJ_4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_24 /* Build configuration list for PBXNativeTarget "RangeSeekSliderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_25 /* Debug */,
-				OBJ_26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
